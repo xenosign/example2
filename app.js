@@ -13,7 +13,6 @@ app.get("/", (req, res) => {
 
 app.get("/member", async (req, res) => {
   const MEMBERS = await db.getAllMembers();
-  console.log(MEMBERS);
   res.render("member", { MEMBERS });
 });
 
